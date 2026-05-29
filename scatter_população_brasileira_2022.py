@@ -42,8 +42,8 @@ fig = px.scatter_geo(
     size='populacao',       # Tamanho da bolha pela proporção
     color='populacao',      # Cor da bolha pela proporção
     hover_name='sigla_uf',              # Mostra a sigla ao passar o mouse
-    title='Mapa da População Brasileira por Estado (2022)',
-    labels={'populacao': 'Escala'}
+    title='Mapa da Concentração da População Brasileira por Estado (2022)',
+    labels={'populacao': 'População'}
 )
 
 # 7. Ajustar o mapa para focar automaticamente nas coordenadas do Brasil

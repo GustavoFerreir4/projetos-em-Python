@@ -20,11 +20,11 @@ class CSV:
 		self.file.seek(0)
 
 		header = self.file.readline()
-		header = self.seperateContent(header)
+		header = self.seperateContent(header, True)
 
 		cursor = self.file.tell()	
 
-		print(header)
+		print(header[0], "\t|", header[1], "\t|",header[2], "|")
 		for line in range(0, len(self)):
 			if line == 0:
 				self.file.seek(cursor)
